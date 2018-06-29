@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.2)
+
+PROJECT(BinaryNet_TF)
+
+SET(CMAKE_CXX_STANDARD 11)
+
+ADD_DEFINITIONS("-D_GLIBCXX_USE_CXX11_ABI=0")
+
+ADD_SUBDIRECTORY(Operators/OpSource)
