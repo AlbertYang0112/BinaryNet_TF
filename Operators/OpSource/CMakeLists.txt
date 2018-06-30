@@ -4,6 +4,6 @@ INCLUDE_DIRECTORIES(
 )
 
 SET(LIBRARY_OUTPUT_PATH ../../lib)
-ADD_LIBRARY(testop SHARED testop.cpp)
+ADD_LIBRARY(binarizeOp SHARED Binarize.cpp)
 
-TARGET_LINK_LIBRARIES( testop /usr/local/lib/python3.5/dist-packages/tensorflow/libtensorflow_framework.so )
+TARGET_LINK_LIBRARIES( binarizeOp /usr/local/lib/python3.5/dist-packages/tensorflow/libtensorflow_framework.so )
