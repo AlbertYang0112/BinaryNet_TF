@@ -26,6 +26,8 @@ class ShiftBasedBatchNormOp : public OpKernel
 
 void ShiftBasedBatchNormOp::Compute(OpKernelContext* context)
 {
+    const Tensor& input_tensor = context->input(0);
+    auto avg = ops::Mean();
 
 }
 
