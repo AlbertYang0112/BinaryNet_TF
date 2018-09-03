@@ -20,3 +20,4 @@ $$y=a_n(x<<n)+a_{n-1}(x<<(n-1))+a_{n-2}(x<<(n-2))+\cdots$$
 $$x\approx AP2(x)=sign(x)2^{round(log_2x)}$$
 显然：$a_n=sing(x)=\pm 1$，因此：
 $$z=x\times y\approx x\times AP2(y)=sign(y)(x<<(round(log_2x)))$$
+其中的$log_2x$可由浮点数直接获得
