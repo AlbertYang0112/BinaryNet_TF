@@ -1,5 +1,6 @@
 import tensorflow as tf
 
+
 def ShiftBasedMul(x, y):
     return tf.multiply(x, y)
 
@@ -13,7 +14,6 @@ def ap2(input_tensor):
     r = tf.round(tf.log(tf.abs(input_tensor)) / tf.log(2.))
     approximate = tf.multiply(sign, tf.pow(2., r))
     return approximate
-
 
 
 def ShiftBasedBatchNormalization(input_tensor, offset, scale, eps=1e-5):
